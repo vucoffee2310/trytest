@@ -23,19 +23,13 @@
         }
     ],
     "permissions": [
-        "webRequest",
-        "scripting",
-        "tabs",
-        "activeTab"
+        "webRequest"
     ],
     "host_permissions": [
-        "https://www.youtube.com/api/timedtext?*",
-        "https://gemini.google.com/*",
-        "https://generativelanguage.googleapis.com/*"
+        "https://www.youtube.com/api/timedtext?*"
     ],
     "background": {
-        "service_worker": "js/background.js",
-        "type": "module"
+        "service_worker": "js/background.js"
     },
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'; require-trusted-types-for 'script'; trusted-types my-extension-policy;"
